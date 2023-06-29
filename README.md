@@ -8,7 +8,7 @@ ssh -J 51.250.94.72 10.128.0.20
 51.250.94.72 - публичный IP bastion
 10.128.0.20 - IP someinternalhost из внутренней подсети
 
-## Подключение к someinternalhost командой 'ssh someinternalhos'
+## Подключение к someinternalhost командой 'ssh someinternalhost'
 Использовал "stdio forwarding".
 Для этого надо прописать настройки в файл .ssh/config
 ```
