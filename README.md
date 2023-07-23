@@ -20,3 +20,19 @@ Host someinternalhost
 ## VPN config
 bastion_IP = 51.250.94.72
 someinternalhost_IP = 10.128.0.20
+
+# Homework 06 Основные сервисы Yandex Cloud
+testapp_IP = 62.84.118.215
+testapp_port = 9292
+
+## Задание со * команда для создания ВМ
+yc compute instance create \
+--name reddit-app \
+--hostname reddit-app \
+--memory=4 \
+--create-boot-disk image-folder-id=standard-images,image-family=ubuntu-1604-lts,size=10GB \
+--network-interface subnet-name=default-ru-central1-a,nat-ip-version=ipv4 \
+--metadata serial-port-enable=1 \
+--metadata-from-file user-data=/home/pavel/Otus/PavelBaburov_infra/cloud-init.config
+
+файл cloud-init.config содержит команды по установке mongodb, git и ruby.
