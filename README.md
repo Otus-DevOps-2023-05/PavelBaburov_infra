@@ -38,8 +38,8 @@ yc compute instance create \
 файл cloud-init.config содержит команды по установке mongodb, git и ruby.
 
 # Homework 07 Packer
-1) Создан файл ubuntu16.json для создания reddit-base образа.
-2) Создан файл ubuntu16_template.json и variables.json (variables.json.example) для создания reddit-base образа с переменными вынесенными в отдельный файл.
+1) Создан файл ubuntu16_base.json для создания reddit-base образа.
+2) Создан файл ubuntu16.json и variables.json (variables.json.example) для создания reddit-base образа с переменными вынесенными в отдельный файл.
 
 # Задание со звёздочкой
 1) Файл immutable.json использует переменные из файла variables.json (variables.json.example) и использует следующие файлы:
