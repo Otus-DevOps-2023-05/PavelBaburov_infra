@@ -47,3 +47,4 @@ yc compute instance create \
 - scripts/install_ruby.sh - усатновка rubby;
 - scripts/install_mongodb.sh - установка mongodb;
 - files/deploy.sh - установка reddit и регистрация сервиса.
+2) Файл config-scripts/create-reddit-vm.sh создаёт ВМ из образа reddit-full
