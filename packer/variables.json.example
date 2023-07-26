@@ -1,6 +1,6 @@
 {
     "folder_id": "xxxxxxxxxxxxxxxxfksg",
     "source_image_family": "ubuntu-1604-lts",
-    "key_file": "/home/user/key_file.json",
+    "key_file": "files/key_file.json",
     "ssh_username": "ubuntu"
 }
