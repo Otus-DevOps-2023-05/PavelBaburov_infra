@@ -36,3 +36,15 @@ yc compute instance create \
 --metadata-from-file user-data=/home/pavel/Otus/PavelBaburov_infra/cloud-init.config
 
 файл cloud-init.config содержит команды по установке mongodb, git и ruby.
+
+# Homework 07 Packer
+1) Создан файл ubuntu16_base.json для создания reddit-base образа.
+2) Создан файл ubuntu16.json и variables.json (variables.json.example) для создания reddit-base образа с переменными вынесенными в отдельный файл.
+
+# Задание со звёздочкой
+1) Файл immutable.json использует переменные из файла variables.json (variables.json.example) и использует следующие файлы:
+- files/reddit.service - копируется в образ для настройки работы reddit как сервиса;
+- scripts/install_ruby.sh - усатновка rubby;
+- scripts/install_mongodb.sh - установка mongodb;
+- files/deploy.sh - установка reddit и регистрация сервиса.
+2) Файл config-scripts/create-reddit-vm.sh создаёт ВМ из образа reddit-full
