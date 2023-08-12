@@ -25,3 +25,6 @@ variable "service_account_key_file" {
 variable "connection_key_file" {
   description = "ssh private key"
 }
+variable "vm_count" {
+  description = "vm count"
+}
