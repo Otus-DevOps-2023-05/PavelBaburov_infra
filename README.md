@@ -41,10 +41,22 @@ yc compute instance create \
 1) Создан файл ubuntu16_base.json для создания reddit-base образа.
 2) Создан файл ubuntu16.json и variables.json (variables.json.example) для создания reddit-base образа с переменными вынесенными в отдельный файл.
 
-# Задание со звёздочкой
+## Задание со звёздочкой
 1) Файл immutable.json использует переменные из файла variables.json (variables.json.example) и использует следующие файлы:
 - files/reddit.service - копируется в образ для настройки работы reddit как сервиса;
 - scripts/install_ruby.sh - усатновка rubby;
 - scripts/install_mongodb.sh - установка mongodb;
 - files/deploy.sh - установка reddit и регистрация сервиса.
 2) Файл config-scripts/create-reddit-vm.sh создаёт ВМ из образа reddit-full
+
+# Homework 08 Terrafrom-1
+1) Созданы следующие файлы:
+- main.tf - содержит интсрукции по созданию инстанса ВМ с Reddit из базового образа;
+- variables.tf - описание переменных;
+- terraform.tvars - сами переменные (terraform.tvars.example - файлик с фейковыми переменными для проверки);
+- outputs.tf - выходные переменные.
+
+## Задание со *
+1) Создан файл:
+- lb.tf - содержит инструкции по созданию баланчировщика нагрузки и групп для него;
+2) Для оптимизации кода использована опция Count для создания нескольких ВМ.
