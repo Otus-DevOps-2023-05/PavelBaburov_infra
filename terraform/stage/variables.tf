@@ -36,3 +36,6 @@ variable db_disk_image {
 description = "Disk image for reddit db"
 default = "mongo-db"
 }
+variable "stage" {
+  description = "stage"
+}
