@@ -28,11 +28,11 @@ variable "connection_key_file" {
 variable "vm_count" {
   description = "vm count"
 }
-variable app_disk_image {
+variable "app_disk_image" {
   description = "Disk image for reddit app"
-  default = "reddit-only"
+  default     = "reddit-only"
 }
-variable db_disk_image {
-description = "Disk image for reddit db"
-default = "mongo-db"
+variable "db_disk_image" {
+  description = "Disk image for reddit db"
+  default     = "mongo-db"
 }
