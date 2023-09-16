@@ -13,3 +13,12 @@ variable "stage" {
   description = "stage"
   default = "stage"
 }
+
+variable "connection_key_file" {
+  description = "ssh private key"
+}
+
+variable "DB_IP" {
+  description = "IP of mongo db"
+  default = "127.0.0.1"
+}
