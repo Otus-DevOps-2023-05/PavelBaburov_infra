@@ -21,6 +21,7 @@ module "db" {
   db_disk_image   = var.db_disk_image
   subnet_id       = var.subnet_id
   stage           = var.stage
+  connection_key_file = var.connection_key_file
 }
 
 module "app" {
@@ -30,7 +31,7 @@ module "app" {
   subnet_id       = var.subnet_id
   stage           = var.stage
   connection_key_file = var.connection_key_file
-  DB_IP           = module.db.external_ip_address_db
+  DB_IP           = module.db.internal_ip_address_db
   depends_on      = [
     module.db
   ]

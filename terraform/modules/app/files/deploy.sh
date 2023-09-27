@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+#set -e
 APP_DIR=${1:-$HOME}
 echo "waiting 30 seconds"
 sleep 30

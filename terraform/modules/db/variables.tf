@@ -13,3 +13,6 @@ variable "stage" {
   description = "stage"
   default = "stage"
 }
+variable "connection_key_file" {
+  description = "ssh private key"
+}
