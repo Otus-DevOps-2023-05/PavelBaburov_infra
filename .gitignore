@@ -6,3 +6,4 @@ variables.json
 *.tfvars
 .terraform/
 *_bad
+*not_in_use
