@@ -43,12 +43,12 @@ resource "yandex_compute_instance" "db" {
     private_key = file(var.connection_key_file)
   }
 
-  provisioner "file" {
-    content     = templatefile("${path.module}/files/mongod.conf", { IP = yandex_compute_instance.db.network_interface.0.ip_address })
-    destination = "/tmp/mongod.conf"
-  }
+#  provisioner "file" {
+#    content     = templatefile("${path.module}/files/mongod.conf", { IP = yandex_compute_instance.db.network_interface.0.ip_address })
+#    destination = "/tmp/mongod.conf"
+#  }
 
-  provisioner "remote-exec" {
-    script = "${path.module}/files/apply_db_config.sh"
-  }
+#  provisioner "remote-exec" {
+#    script = "${path.module}/files/apply_db_config.sh"
+#  }
 }
