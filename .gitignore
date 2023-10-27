@@ -7,3 +7,4 @@ variables.json
 .terraform/
 *_bad
 *not_in_use
+*.retry
