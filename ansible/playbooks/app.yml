@@ -1,8 +1,6 @@
 - name: Configure app host & deploy application
   hosts: appserver
   become: true
-  vars:
-    db_host: 10.128.0.25
 
   roles:
     - app
