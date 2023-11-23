@@ -9,3 +9,4 @@ variables.json
 *not_in_use
 *.retry
 jdauphant.nginx
+vault.key
