@@ -28,6 +28,7 @@ module "app" {
   source          = "../modules/app"
   public_key_path = var.public_key_path
   app_disk_image  = var.app_disk_image
+  network_id      = var.network_id
   subnet_id       = var.subnet_id
   stage           = var.stage
   connection_key_file = var.connection_key_file

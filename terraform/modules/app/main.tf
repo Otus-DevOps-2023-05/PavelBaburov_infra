@@ -8,6 +8,20 @@ terraform {
   required_version = ">= 0.13"
 }
 
+resource "yandex_vpc_security_group" "reddit-app" {
+  description = "Default security group for reddit-app instances"
+  name        = "sg-reddit"
+  network_id  = var.network_id
+
+  ingress {
+    description    = "Allow connections to the Prometheus"
+    protocol       = "TCP"
+    port           = 80
+    v4_cidr_blocks = ["0.0.0.0/0"]
+  }
+
+}
+
 resource "yandex_compute_instance" "app" {
   name = "${var.stage}-reddit-app"
 
