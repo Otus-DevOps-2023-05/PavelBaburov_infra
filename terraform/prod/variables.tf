@@ -16,6 +16,11 @@ variable "public_key_path" {
 # variable "image_id" {
 #   description = "Disk image"
 # }
+
+variable "network_id" {
+  description = "Network identifier"
+}
+
 variable "subnet_id" {
   description = "Subnet"
 }

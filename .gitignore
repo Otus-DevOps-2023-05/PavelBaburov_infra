@@ -8,3 +8,5 @@ variables.json
 *_bad
 *not_in_use
 *.retry
+jdauphant.nginx
+vault.key
